@@ -10,6 +10,23 @@ namespace C0949494_C0949493
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Let's insert a DEBUG POINT");
+            // how do we Create a Dog object?
+            // we use the "new" keyword!
+            Dog fido = new Dog();
+            fido.name = "Fido";
+        }
+    }
+
+    class Dog
+    {
+        // Data Attribute
+        public string name;
+
+        // Objects have BEHAVIORS!
+        public void Bark()
+        {
+            Console.WriteLine("Hello I am a Dog, My name is {0} ", name);
         }
     }
 }
