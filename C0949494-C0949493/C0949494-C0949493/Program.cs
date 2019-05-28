@@ -17,6 +17,7 @@ namespace C0949494_C0949493
             fido.name = "Fido";
             // NOW lets INVOKE the Bark() Method
             // NOTE: right now we are NOT passing a Parameter to the METHOD!
+            fido.Bark();
             fido.Bark(3);
         }
     }
@@ -26,12 +27,13 @@ namespace C0949494_C0949493
         // Data Attribute
         public string name;
 
-        // Objects have BEHAVIORS!
+        // Objects have BEHAVIORS called METHODs!
         public void Bark()
         {
             Console.WriteLine("Hello I am a Dog, My name is {0} ", name);
         }
 
+        // Methods may take Parameters as input
         public void Bark(int age)
         {
             Console.WriteLine("Hello I am a Dog, I am {0} years old", age);
