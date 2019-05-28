@@ -84,4 +84,51 @@ namespace C0949494_C0949493
             }
         }
     }
+    
+     class IfThenExample
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("let's play a game - enter any number");
+            int userInput = Convert.ToInt32(Console.ReadLine());
+    
+            if (userInput < 80) { Console.WriteLine("sorry you lose!");  }
+
+            else if (userInput > 120) { Console.WriteLine("sorry you lose!");}
+            
+            else { 
+            Console.WriteLine("YEAH!!! YOU WON!");}
+
+        }
+    public void TestStringEquality(){
+            String Name = Console.ReadLine();
+            String Name2 = Console.ReadLine();
+
+            if (Name.Equals(Name2)) { Console.WriteLine("true"); }
+            else { Console.WriteLine("true"); } 
+        }
+     
+     }
+    
+    public void LargestNumber(){
+     static void Main(string[] args)
+        {
+            int largest = 0;
+            int num1, num2, num3;
+      
+            Console.WriteLine("enter 1st number: ");
+             num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter 2nd number: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter 3rd number: ");
+            num3 = Convert.ToInt32(Console.ReadLine());
+            {
+                if (num1 > largest) { largest = num1; }
+                if (num2 > largest) { largest = num2; }
+                if (num3 > largest) { largest = num3; }
+
+                Console.WriteLine(largest);
+            }
+        }   
+    }
 }
