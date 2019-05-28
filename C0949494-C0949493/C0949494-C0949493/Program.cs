@@ -10,15 +10,8 @@ namespace C0949494_C0949493
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Let's insert a DEBUG POINT");
-            // how do we Create a Dog object?
-            // we use the "new" keyword!
-            Dog fido = new Dog();
-            fido.name = "Fido";
-            // NOW lets INVOKE the Bark() Method
-            // NOTE: right now we are NOT passing a Parameter to the METHOD!
-            fido.Bark();
-            fido.Bark(3);
+            AA beachball = new AA();
+            beachball.Run();
         }
     }
 
@@ -37,6 +30,18 @@ namespace C0949494_C0949493
         public void Bark(int age)
         {
             Console.WriteLine("Hello I am a Dog, I am {0} years old", age);
+        }
+    }
+
+    class AA
+    {
+        public void Run()
+        {
+            string name;
+            // Write a C# program to input your name and print Hello and your name in a separate line.
+            Console.WriteLine("What is your Name?");
+            name = Console.ReadLine();
+            Console.WriteLine("HELLO! {0} ", name);
         }
     }
 }
