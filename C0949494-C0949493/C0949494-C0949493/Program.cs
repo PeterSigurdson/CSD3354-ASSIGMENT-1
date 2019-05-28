@@ -10,7 +10,7 @@ namespace C0949494_C0949493
     {
         static void Main(string[] args)
         {
-            AA beachball = new AA();
+            AB beachball = new AB();
             beachball.Run();
         }
     }
@@ -42,6 +42,21 @@ namespace C0949494_C0949493
             Console.WriteLine("What is your Name?");
             name = Console.ReadLine();
             Console.WriteLine("HELLO! {0} ", name);
+        }
+    }
+
+    class AB
+    {
+        public void Run()
+        {
+            int number1, number2;
+
+            Console.WriteLine("enter a number");
+            number1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter a number");
+            number2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("the sum of {0}, and {1}, is {2} ", number1, number2, 0);
+
         }
     }
 }
