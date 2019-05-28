@@ -59,4 +59,21 @@ namespace C0949494_C0949493
 
         }
     }
+    
+     class IfThenExample
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("let's play a game - enter any number");
+            int userInput = Convert.ToInt32(Console.ReadLine());
+    
+            if (userInput < 80) { Console.WriteLine("sorry you lose!");  }
+
+            else if (userInput > 120) { Console.WriteLine("sorry you lose!");}
+            
+            else { 
+            Console.WriteLine("YEAH!!! YOU WON!");}
+
+        }
+    }
 }
