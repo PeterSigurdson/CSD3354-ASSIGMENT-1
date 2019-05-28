@@ -15,6 +15,9 @@ namespace C0949494_C0949493
             // we use the "new" keyword!
             Dog fido = new Dog();
             fido.name = "Fido";
+            // NOW lets INVOKE the Bark() Method
+            // NOTE: right now we are NOT passing a Parameter to the METHOD!
+            fido.Bark(3);
         }
     }
 
@@ -27,6 +30,11 @@ namespace C0949494_C0949493
         public void Bark()
         {
             Console.WriteLine("Hello I am a Dog, My name is {0} ", name);
+        }
+
+        public void Bark(int age)
+        {
+            Console.WriteLine("Hello I am a Dog, I am {0} years old", age);
         }
     }
 }
