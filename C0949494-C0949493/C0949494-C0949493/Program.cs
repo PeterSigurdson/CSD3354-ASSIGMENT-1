@@ -75,5 +75,15 @@ namespace C0949494_C0949493
             Console.WriteLine("YEAH!!! YOU WON!");}
 
         }
-    }
+    public void TestStringEquality(){
+            String Name = Console.ReadLine();
+            String Name2 = Console.ReadLine();
+
+            if (Name.Equals(Name2)) { Console.WriteLine("true"); }
+            else { Console.WriteLine("true"); } 
+        }
+     
+     }
+    
+    
 }
